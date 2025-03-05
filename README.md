@@ -15,22 +15,23 @@ Ubuntu 24.04 does not include Python 2.7 by default, as it has reached its end o
 3. **Download Python 2.7.18 source code:**
     ```bash
     cd /usr/src
-    sudo wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz
+    wget https://www.python.org/ftp/python/2.7.18/Python-2.7.18.tgz
     ```
 4. **Extract the downloaded file:**
     ```bash
-    sudo tar xzf Python-2.7.18.tgz
+    tar xzf Python-2.7.18.tgz
     cd Python-2.7.18
     ```
 5. **Configure and compile Python 2.7:**
     ```bash
-    sudo ./configure --enable-optimizations
-    sudo make altinstall
+    ./configure --enable-optimizations
+    make
+    sudo make install
     ```
 
 6. **Verify installation:**
     ```bash
-    python2.7 -V
+    python -V
     ```
     Expected output:
     ```
