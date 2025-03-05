@@ -6,7 +6,7 @@ Ubuntu 24.04 does not include Python 2.7 by default, as it has reached its end o
 
 1. **Update the system packages:**
     ```bash
-    sudo apt update '&&' sudo apt upgrade
+    sudo apt update && sudo apt upgrade
     ```
 2. **Install required dependencies:**
     ```bash
