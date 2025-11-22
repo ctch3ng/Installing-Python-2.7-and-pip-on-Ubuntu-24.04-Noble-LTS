@@ -26,10 +26,10 @@ Ubuntu 24.04 does not include Python 2.7 by default, as it has reached its end o
     When configuring the build, you have two options for the compilation:
     
     Option 1: Standard Build (Recommended for simplicity)
-    This option compiles Python without advanced optimizations, resulting in a cleaner and faster build process.
+    This option compiles Python without advanced optimizations, resulting in a cleaner and faster build process. By using `--prefix=/usr/local/python2.7`, you ensure the Python 2.7 executable is         installed as `/usr/local/python2.7/bin/python`. This can avoid overwriting or conflicting with files belonging to the system's default Python 3 installation, potentially breaking system utilities that rely on Python 3.
     
     ```bash
-    ./configure
+    ./configure --prefix=/usr/local/python2.7
     make
     sudo make install
     ```
@@ -39,7 +39,7 @@ Ubuntu 24.04 does not include Python 2.7 by default, as it has reached its end o
     Note: This could increase the compile time and will produce a large amount of verbose output, including warnings/logs, during the make step. 
     
     ```bash
-    ./configure --enable-optimizations
+    ./configure --enable-optimizations --prefix=/usr/local/python2.7
     make
     sudo make install
     ```
