@@ -10,7 +10,7 @@ Ubuntu 24.04 does not include Python 2.7 by default, as it has reached its end o
     ```
 2. **Install required dependencies:**
     ```bash
-    sudo apt install -y build-essential checkinstall libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev
+    sudo apt install -y build-essential checkinstall libncurses-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev
     ```
 3. **Download Python 2.7.18 source code:**
     ```bash
