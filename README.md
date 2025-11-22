@@ -23,6 +23,21 @@ Ubuntu 24.04 does not include Python 2.7 by default, as it has reached its end o
     cd Python-2.7.18
     ```
 5. **Configure and compile Python 2.7:**
+    When configuring the build, you have two options for the compilation:
+    
+    Option 1: Standard Build (Recommended for simplicity)
+    This option compiles Python without advanced optimizations, resulting in a cleaner and faster build process.
+    
+    ```bash
+    ./configure
+    make
+    sudo make install
+    ```
+    
+    Option 2: Optimized Build (For potential performance gains)
+    The `--enable-optimizations` flag enables Profile-Guided Optimization (PGO), which can result in a slightly faster interpreter. 
+    Note: This could increase the compile time and will produce a large amount of verbose output, including warnings/logs, during the make step. 
+    
     ```bash
     ./configure --enable-optimizations
     make
