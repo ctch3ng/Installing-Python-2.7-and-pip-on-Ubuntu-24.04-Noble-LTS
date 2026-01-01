@@ -46,7 +46,7 @@ Ubuntu 24.04 does not include Python 2.7 by default, as it has reached its end o
 
 6. **Verify installation:**
     ```bash
-    python -V
+    /usr/local/python2.7/bin/python2.7 -V
     ```
     Expected output:
     ```
