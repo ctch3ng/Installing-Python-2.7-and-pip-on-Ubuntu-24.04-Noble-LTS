@@ -53,11 +53,25 @@ Ubuntu 24.04 does not include Python 2.7 by default, as it has reached its end o
     Python 2.7.18
     ```
 
+7. **Adding Python 2.7 to PATH:**
+
+   To use the `python2.7` command without typing the full path every time:
+
+    ```bash
+    echo 'export PATH="/usr/local/python2.7/bin:$PATH"' >> ~/.bashrc
+    source ~/.bashrc
+    ```
+
+    **Verify:**
+    ```bash
+    python2.7 -V
+    ```
+
 ## Installing `pip` for Python 2.7
 
 1. **Install `curl` if not installed:**
     ```bash
-    sudo apt install curl
+    sudo apt install curl -y
     ```
 2. **Download the `get-pip.py` script:**
     ```bash
